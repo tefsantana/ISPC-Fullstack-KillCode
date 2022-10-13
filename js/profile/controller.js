@@ -56,7 +56,6 @@ document.addEventListener("click", (e) => {
 
   input.addEventListener('input', function() {
     let inputText = input.value;
-    debugger;
     if (inputText !== "" && inputText.length === 8) {
       validateChecks.inputCheck = true;
     }
@@ -98,7 +97,6 @@ let clickNewEmailBtn = document.addEventListener("click", (e) => {
 
 if (clickNewEmailBtn) {
   let confirmNewEmail = document.querySelector('#confirm-new-email-btn');
-  debugger;
 
   function validateEmail() {
     let emailUsername = document.getElementById("email-username").value;
