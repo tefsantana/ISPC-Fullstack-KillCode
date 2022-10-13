@@ -2,10 +2,15 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.ND-titulo{
+    text-align: center;
+}
 .acordeon{
-    background-color: rgba(100,100,230,0.8);
-    width: 500px;
+    background-color:#002266;
+    width: 80%;
     padding: 0.5em;
+    margin: 5px auto;
+    border-radius: 10px;
 }
 .acordeon .bloque{
     background-color: rgba(255,255,255,0.5);
@@ -19,7 +24,7 @@
     padding: 5px;
     text-align: center;
     border-radius: 15px;
-    color: blueviolet;
+    color: #002266;
 
 }
 .acordeon .contenido{
@@ -44,3 +49,4 @@
     width: 95%;
     text-align: justify;
 }
+
