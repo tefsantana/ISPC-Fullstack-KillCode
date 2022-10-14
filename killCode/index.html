@@ -1,42 +1,96 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-behavior">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>KILLCode Oficial Site</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  </head>
+    <style>
+        section{
+            height: 500px;
+        }
+        body{
+            background-color:lavender;
+        }
+    </style>
+</head>
 <body> 
-        <nav class="navbar navbar-dark bg-dark d-flex justify-content-between" style="padding: 15px;">
+    <header class="sticky-top">
+        <nav class="navbar navbar-dark bg-dark bg-gradient d-flex justify-content-between" style="padding: 15px;">
             <img class="icon" src="../assets/killcode-icon.png" alt="killcode icon">
             <ul class="nav">
                 <li class="nav-item">
-                  <a class="nav-link link-danger active" aria-current="page" href="#">Home</a>
+                  <a class="nav-link link-danger active" aria-current="page" href="#Hom">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link link-danger" href="#">¿Quienes somos?</a>
+                  <a class="nav-link link-danger" href="#QS">¿Quienes somos?</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link link-danger" href="#">¿A que nos dedicamos?</a>
+                  <a class="nav-link link-danger" href="#AD">¿A que nos dedicamos?</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link link-danger" href="#">Contacto</a>
+                  <a class="nav-link link-danger" href="#Con">Contacto</a>
                 </li>
               </ul>
           </nav>
         
     </header>
-    <section>
+    <section id="Hom">
         <h1>Home</h1>
     </section>
-    <section>
+    <section id="QS">
         <h1>¿Quienes Somos?</h1>
     </section>
-    <section>
+    <section id="AD">
         <h1>¿A que nos dedicamos?</h1>
     </section>
-    <section>
-        <h1>Contactanos</h1>
+    <section id="Con">
+        <h1 class="text-danger text-center">Contactanos</h1>
+        <div class="container py-4">
+
+            <!-- Bootstrap 5 starter form -->
+            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+          
+              <!-- Name input -->
+              <div class="mb-3">
+                <label class="form-label text-danger" for="name">Nombre y Apellido</label>
+                <input class="form-control" id="name" type="text" data-sb-validations="required" />
+                <div class="invalid-feedback" data-sb-feedback="name:required">Nombre y Apeliido requerido.</div>
+              </div>
+          
+              <!-- Email address input -->
+              <div class="mb-3">
+                <label class="form-label text-danger" for="emailAddress">Email</label>
+                <input class="form-control" id="emailAddress" type="email"  data-sb-validations="required, email" />
+                <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Favor de ingresar un Email</div>
+                <div class="invalid-feedback" data-sb-feedback="emailAddress:email">La dirección de correo no es valida.</div>
+              </div>
+          
+              <!-- Message input -->
+              <div class="mb-3">
+                <label class="form-label text-danger" for="message">Mensaje</label>
+                <textarea class="form-control" id="message" type="text"  style="height: 10rem;" data-sb-validations="required"></textarea>
+                <div class="invalid-feedback" data-sb-feedback="message:required">Mensaje requerido.</div>
+              </div>
+          
+              <!-- Form submissions success message -->
+              <div class="d-none" id="submitSuccessMessage">
+                <div class="text-center mb-3">¡Se ha enviado correctamente!</div>
+              </div>
+          
+              <!-- Form submissions error message -->
+              <div class="d-none" id="submitErrorMessage">
+                <div class="text-center text-danger mb-3">¡Error enviando mensaje!</div>
+              </div>
+          
+              <!-- Form submit button -->
+              <div class="d-grid">
+                <button class="btn btn-dark btn-lg text-danger" id="submitButton" type="submit">Enviar</button>
+              </div>
+          
+            </form>
+          
+          </div>
     </section>
     <footer>
     </footer>
