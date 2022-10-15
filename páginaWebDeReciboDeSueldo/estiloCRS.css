@@ -1,0 +1,82 @@
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+body {
+    overflow: auto;
+    height: 100vh;
+    background: linear-gradient(
+        135deg,
+        #CCDDFF,
+        #0099ff 100%
+    );
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+}
+.container {
+    width:70%;
+    max-height:100%;
+    min-width:420px;
+    padding:35px 50px;
+    transform:translate(-50%,-50%);
+    position:absolute;
+    left:50%;
+    top:50%;
+    border-radius:10px;
+}
+h1{
+    margin-top:20px;
+    font-size: 30px;
+    text-align: center;
+    color: black;
+}
+h3 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+p {
+    position: relative;
+    margin: auto;
+    width:100%;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+}
+form {
+    width:100%;
+    position:relative;
+    margin: 30px auto 0 auto;
+}
+.row {
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-gap: 20px 30px;
+    margin-bottom: 10px;
+}
+label {
+    font-size: 14px;
+}
+input, select {
+    width:100%;
+    font-weight: 400;
+    border-radius: 5px;
+    padding: 8px 10px;
+    margin-top: 5px;
+}
+button {
+    border:none;
+    padding:10px 20px;
+    margin-right: 20px;
+    background: linear-gradient(
+        130deg,
+        #CCDDFF,
+        #0099ff 100%
+    );
+    border-radius: 3px;
+}
