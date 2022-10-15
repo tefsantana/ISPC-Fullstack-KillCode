@@ -323,7 +323,8 @@ button.btn.confirm-btn {
 .claim-cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 5px;
+    grid-gap: 15px;
+    width: fit-content;
 }
 
 .claim.card {
@@ -407,6 +408,19 @@ button.btn.confirm-btn {
     @media screen and (min-width:1024px) {
         .card-editable-personal-data {
             width: 100%;
+        }
+    }
+
+    @media screen and (min-width:1280px) {
+        .card-editable-personal-data {
+            width: 728px;
+            align-self: center;
+        }
+    }
+
+    @media screen and (min-width:1620px) {
+        .claim-cards{
+            grid-template-columns: repeat(3, 1fr);
         }
     }
 
