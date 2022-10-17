@@ -461,4 +461,5 @@ button.btn.confirm-btn {
   color: var(--white-color);
   font-size: 1.2rem;
   font-weight: 400;
+  margin-bottom: 0;
 }
