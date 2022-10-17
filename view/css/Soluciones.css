@@ -1,0 +1,51 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+header  {
+    background-color: #5335d5;
+    flex: auto;
+    padding: 10px;
+}
+
+
+h1  {
+    flex: auto;
+   font-size: 35px ;
+   margin-left: 25px;
+}
+
+.caja{
+    /* width: 50px;
+    position: relative;
+    margin: 0 auto; */
+    display: flex;
+    justify-content: space-between;
+    height: 15px;
+}
+
+nav{
+    position: absolute;
+    top: 10px;
+    right: 30px;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color:#f1f0f8;
+    text-decoration: underline;
+
+}
