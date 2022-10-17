@@ -214,3 +214,38 @@ h1  {
     justify-content: space-between;
     height: 15px;
 }
+
+/************ Footer ************/
+
+.footer {
+    width: 100%;
+    height: 150px;
+    background-color: var(--second-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+  
+.footer-content {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.footer-section {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.footer-text {
+    color: var(--white-color);
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 0;
+}
