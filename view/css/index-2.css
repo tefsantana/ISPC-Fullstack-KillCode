@@ -86,7 +86,7 @@ header a:hover{
         rgba(0,0,0,.5),
         rgba(0,0,0,.5)
     )
-    ,url(img/Programador-freelance-Workana.jpg);;
+    ,url(../assets/Programador-freelance-Workana.jpg);
     background: cover;
     background-position: center center;
 }
@@ -97,11 +97,15 @@ header a:hover{
 
 #somos-KillCode{
 
-}
+        text-align: center; 
+        padding: 50px 15px;
+    }
 
-#somos-KillCode .container{
+#somos-KillCode .texto{
+    margin-top: 20px;
     text-align: center;
-    padding: 40px 12px;
+    padding: 20px 12px;
+    font-weight: bold;
 }
 
 #caracteristicas .container{
@@ -109,7 +113,7 @@ header a:hover{
 }
 
 #caracteristicas li{
-    margin: 12px 0px;
+    margin: 12px 5px;
     font-weight: bold;
 }
 
@@ -173,4 +177,3 @@ footer .container{
     #caracteristicas ul{
         text-align: center;
     }
-}
