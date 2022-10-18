@@ -109,7 +109,7 @@ header a:hover{
     border-radius: 5%;
 }
 
-.opcion:first-child{
+#opcionesPresupuestos .opcion:first-child{
     background-image: linear-gradient(
         0deg,
         rgba(0,0,0,.5),
@@ -118,7 +118,7 @@ header a:hover{
     ,url(../assets/microempresas.jpg);
 }
 
-.opcion:nth-child(2){
+#opcionesPresupuestos .opcion:nth-child(2){
     background-image: linear-gradient(
         0deg,
         rgba(0,0,0,.5),
@@ -127,7 +127,7 @@ header a:hover{
     ,url(/assets/pequeaempresa.png);
 }
 
-.opcion:nth-child(3){
+#opcionesPresupuestos .opcion:nth-child(3){
     background-image: linear-gradient(
         0deg,
         rgba(0,0,0,.5),
@@ -136,7 +136,7 @@ header a:hover{
     ,url(/assets/medianaempresa.png);
 }
 
-.opcion:nth-child(4){
+#opcionesPresupuestos .opcion:nth-child(4){
     background-image: linear-gradient(
         0deg,
         rgba(0,0,0,.5),
