@@ -76,7 +76,7 @@ header a:hover{
 
 #nuestrosPresupuestos{
     text-align: center;
-    padding-top: 40px;
+    padding-top: 100px;
 }
 
 #nuestrosPresupuestos h2{
@@ -124,7 +124,7 @@ header a:hover{
         rgba(0,0,0,.5),
         rgba(0,0,0,.5)
     )
-    , url(/assets/pequeaempresa.png);
+    ,url(/assets/pequeaempresa.png);
 }
 
 .opcion:nth-child(3){
@@ -133,7 +133,7 @@ header a:hover{
         rgba(0,0,0,.5),
         rgba(0,0,0,.5)
     )
-    , url(/assets/medianaempresa.png);
+    ,url(/assets/medianaempresa.png);
 }
 
 .opcion:nth-child(4){
@@ -142,7 +142,7 @@ header a:hover{
         rgba(0,0,0,.5),
         rgba(0,0,0,.5)
     )
-    , url(/assets/grandesempresas.jpg);
+    ,url(/assets/grandesempresas.jpg);
 }
 
 footer{
