@@ -22,7 +22,6 @@ function login(){
 
 document.addEventListener("click", (e) => {
     if (!e.target.matches("#enterSite")) return false;
-    debugger;
     if (login()) {
         window.location.href = "index.html";
     }
