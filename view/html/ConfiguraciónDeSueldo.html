@@ -91,13 +91,13 @@
             <div class="row">
                 <div class="column">
                     <label for="primerNombre">Primer nombre</label>
-                    <input type="text" class="form-control" id="primerNombre" placeholder="Primer nombre">
+                    <input type="text" class="form-control" id="primerNombre" placeholder="Primer nombre" required>
                     <div class="valid-feedback">Válido</div>
                     <div class="invalid-feedback">Por favor llene este campo</div>
                 </div>
                 <div class="column">
                     <label for="apellido">Apellido</label>
-                    <input type="text" class="form-control" id="apellido" placeholder="Apellido">
+                    <input type="text" class="form-control" id="apellido" placeholder="Apellido" required>
                     <div class="valid-feedback">Válido</div>
                     <div class="invalid-feedback">Por favor llene este campo</div>
                 </div>
@@ -105,13 +105,13 @@
             <div class="row">
                 <div class="column">
                     <label for="e-mail">E-mail</label>
-                    <input type="email" class="form-control" id="e-mail" placeholder="E-mail">
+                    <input type="email" class="form-control" id="e-mail" placeholder="E-mail" required>
                     <div class="valid-feedback">Válido</div>
                     <div class="invalid-feedback">Por favor llene este campo</div>
                 </div>
                 <div class="column">
                     <label for="cuilDelEmpleado">Cuil del empleado</label>
-                    <input type="text" class="form-control" id="cuilDelEmpleado" placeholder="Cuil del empleado">
+                    <input type="text" class="form-control" id="cuilDelEmpleado" placeholder="Cuil del empleado" required>
                     <div class="valid-feedback">Válido</div>
                     <div class="invalid-feedback">Por favor llene este campo</div>
                 </div>
@@ -119,13 +119,13 @@
             <div class="row">
                 <div class="column">
                     <label for="dirección">Dirección</label>
-                    <input type="text" class="form-control" id="e-mail" placeholder="Dirección">
+                    <input type="text" class="form-control" id="e-mail" placeholder="Dirección" required>
                     <div class="valid-feedback">Válido</div>
                     <div class="invalid-feedback">Por favor llene este campo</div>
                 </div>
                 <div class="column">
                     <label for="cuidad">Cuidad</label>
-                    <input type="text" class="form-control" id="cuidad" placeholder="Cuidad">
+                    <input type="text" class="form-control" id="cuidad" placeholder="Cuidad" required>
                     <div class="valid-feedback">Válido</div>
                     <div class="invalid-feedback">Por favor llene este campo</div>
                 </div>
@@ -133,7 +133,7 @@
             <div class="row">
                 <div class="column">
                     <label for="códigoPostal">Código postal</label>
-                    <input type="text" class="form-control" id="códigoPostal" placeholder="Código postal">
+                    <input type="text" class="form-control" id="códigoPostal" placeholder="Código postal" required>
                     <div class="valid-feedback">Válido</div>
                     <div class="invalid-feedback">Por favor llene este campo</div>
                 </div>
@@ -154,13 +154,13 @@
             <div class="row">
                 <div class="column">
                     <label for="provincia/cantón">Provincia/Cantón</label>
-                    <input type="text" class="form-control" id="provincia/cantón" placeholder="Provincia/Cantón">
+                    <input type="text" class="form-control" id="provincia/cantón" placeholder="Provincia/Cantón" required>
                     <div class="valid-feedback">Válido</div>
                     <div class="invalid-feedback">Por favor llene este campo</div>
                 </div>
                 <div class="column">
                     <label for="dni">DNI</label>
-                    <input type="number" class="form-control" id="dni" placeholder="DNI">
+                    <input type="number" class="form-control" id="dni" placeholder="DNI" required>
                     <div class="valid-feedback">Válido</div>
                     <div class="invalid-feedback">Por favor llene este campo</div>
                 </div>
@@ -169,13 +169,13 @@
             <div class="row">
                 <div class="column">
                     <label for="díaDelPago">Día del pago</label>
-                    <input type="date" class="form-control" min="1950-01-02" max="2022-12-31" placeholder="Día del Pago" id="díaDelPago">
+                    <input type="date" class="form-control" min="1950-01-02" max="2022-12-31" placeholder="Día del Pago" id="díaDelPago" required>
                     <div class="valid-feedback">Válido</div>
                     <div class="invalid-feedback">Por favor llene este campo</div>
                 </div>
                 <div class="column">
                     <label for="finDelPago">Fin del pago</label>
-                    <input type="date" class="form-control" min="1950-01-02" max="2022-12-31" placeholder="Fin del Pago" id="finDelPago">
+                    <input type="date" class="form-control" min="1950-01-02" max="2022-12-31" placeholder="Fin del Pago" id="finDelPago" required>
                     <div class="valid-feedback">Válido</div>
                     <div class="invalid-feedback">Por favor llene este campo</div>
                 </div>
@@ -183,7 +183,7 @@
             <div class="row">
                 <div class="column">
                     <label for="cantidadDePagos">Cuántas veces es el pago?</label>
-                    <select id="cantidadDePagos" class="form-control">
+                    <select id="cantidadDePagos" class="form-control" required>
             <option value="En todas 2 Semanas">En todas 2 Semanas</option>
             <option value="Semanalmente">Semanalmente</option>
             <option value="Por medio Mes">Por medio Mes</option>
@@ -197,7 +197,7 @@
                 </div>
                 <div class="column">
                     <label for="ingresoAnual">Ingreso anual</label>
-                    <input type="number" class="form-control" placeholder="Ingreso anual" id="ingresoAnual">
+                    <input type="number" class="form-control" placeholder="Ingreso anual" id="ingresoAnual" required>
                     <div class="valid-feedback">Válido</div>
                     <div class="invalid-feedback">Por favor llene este campo</div>
                 </div>
@@ -206,13 +206,13 @@
             <div class="row">
                 <div class="column">
                     <label for="causaPorLaDeducción">Causa por la deducción</label>
-                    <input type="text" class="form-control" id="causaPorLaDeducción" placeholder="Causa por la deducción">
+                    <input type="text" class="form-control" id="causaPorLaDeducción" placeholder="Causa por la deducción" required>
                     <div class="valid-feedback">Válido</div>
                     <div class="invalid-feedback">Por favor llene este campo</div>
                 </div>
                 <div class="column">
                     <label for="cantidadDeDeducción">Cantidad de deducciones</label>
-                    <input type="number" class="form-control" id="cantidadDeDeducción" placeholder="Cantidad de deducciones">
+                    <input type="number" class="form-control" id="cantidadDeDeducción" placeholder="Cantidad de deducciones" required>
                     <div class="valid-feedback">Válido</div>
                     <div class="invalid-feedback">Por favor llene este campo</div>
             </div>
