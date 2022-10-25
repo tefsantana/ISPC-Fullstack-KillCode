@@ -115,7 +115,7 @@ header a:hover{
         rgba(0,0,0,.5),
         rgba(0,0,0,.5)
     )
-    ,url(img/microempresas.jpg);
+    ,url(../assets/microempresas.jpg);
 }
 
 #opcionesPresupuestos .opcion:nth-child(2){
@@ -124,7 +124,7 @@ header a:hover{
         rgba(0,0,0,.5),
         rgba(0,0,0,.5)
     )
-    ,url(img//pequeaempresa.png);
+    ,url(../assets/pequeaempresa.png);
 }
 
 #opcionesPresupuestos .opcion:nth-child(3){
@@ -133,7 +133,7 @@ header a:hover{
         rgba(0,0,0,.5),
         rgba(0,0,0,.5)
     )
-    ,url(img/medianaempresa.png);
+    ,url(../assets/medianaempresa.png);
 }
 
 #opcionesPresupuestos .opcion:nth-child(4){
@@ -142,7 +142,7 @@ header a:hover{
         rgba(0,0,0,.5),
         rgba(0,0,0,.5)
     )
-    ,url(img/grandesempresas.jpg);
+    ,url(../assets/grandesempresas.jpg);
 }
 
 footer{
@@ -207,7 +207,7 @@ footer .container{
         rgba(0,0,0,.5),
         rgba(0,0,0,.5)
     )
-    ,url(img/microempresas.jpg);
+    ,url(../assets/microempresas.jpg);
 }
 
 #opcionesPresupuestos .opcion:nth-child(2){
@@ -216,7 +216,7 @@ footer .container{
         rgba(0,0,0,.5),
         rgba(0,0,0,.5)
     )
-    ,url(img/pequeaempresa.png);
+    ,url(../assets/pequeaempresa.png);
 }
 
 #opcionesPresupuestos .opcion:nth-child(3){
@@ -225,7 +225,7 @@ footer .container{
         rgba(0,0,0,.5),
         rgba(0,0,0,.5)
     )
-    ,url(img/medianaempresa.png);
+    ,url(../assets/medianaempresa.png);
 }
 
 #opcionesPresupuestos .opcion:nth-child(4){
@@ -234,7 +234,7 @@ footer .container{
         rgba(0,0,0,.5),
         rgba(0,0,0,.5)
     )
-    ,url(img/grandesempresas.jpg);
+    ,url(../assets/grandesempresas.jpg);
 }
 
 

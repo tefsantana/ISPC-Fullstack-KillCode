@@ -86,7 +86,7 @@ header a:hover{
         rgba(0,0,0,.5),
         rgba(0,0,0,.5)
     )
-    ,url(img/Programador-freelance-Workana.jpg);
+    ,url(../assets/Programador-freelance-Workana.jpg);
     background: cover;
     background-position: center center;
 }
