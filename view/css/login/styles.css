@@ -19,7 +19,7 @@ html, body {
     background-blend-mode: darken;
 }
 
-.none {
+.disabled {
     display: none;
 }
 
