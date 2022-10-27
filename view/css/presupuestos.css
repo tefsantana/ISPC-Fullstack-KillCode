@@ -37,16 +37,18 @@ button:hover{
 .color-killcode{color:rgba(0,10,0,.6)}
 
 header{
-    background-color: #039BE5;
+    background-color: #001133;
 }
 
 header .logo{
-    margin: 0;
-    padding: 20px 30px;
-    font-weight: bold;
-    color: rgba(0,0,10,.6);
-    font-size: 1.6em;
+    margin-left: -120px;
+  }
+
+header img{
+    margin-top: 18px;
+    width: 160px;
 }
+
 
 header .container{
     display: flex;
@@ -65,7 +67,7 @@ header a{
     padding: 4px 12px;
     text-decoration: none;
     font-weight: bold;
-    color: rgba(0,0,10,.6);
+    color: #BEBDBD;
 }
 
 header a:hover{
