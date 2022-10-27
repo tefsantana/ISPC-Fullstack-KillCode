@@ -4,7 +4,7 @@
 }
 
 body{
-    background: skyblue;
+    background: white;
     margin: 0;
 }
 
@@ -147,22 +147,39 @@ header a:hover{
     ,url(../assets/grandesempresas.jpg);
 }
 
-footer{
-    background-color: rgb(230,230,230);
-}
-
-footer p{
-    margin: 0;
-    padding: 12px;
-    color: rgb(100,100,100);
-}
-
-footer .container{
+.footer {
+    width: 100%;
     height: 150px;
+    background-color: #001133;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
-}
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .footer-content {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-section {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-text {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+
 
 @media (min-width: 720px){
 
