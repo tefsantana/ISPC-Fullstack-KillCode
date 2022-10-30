@@ -11,22 +11,26 @@ section.container {
   margin-right:10px;
 }
 .container-button input{
-  text-align: center;
-  width: 30%;
-  margin-bottom: 30px;
 }
 .container-button input[type=reset] {
-  margin-left:400px;
+  margin-bottom:20px;
 }
 .container-button input[type=submit] {
-  margin-left:400px;
+  margin-bottom:20px;
+}
+.container-button input[type=reset]:hover {
+      background-color:gray;
+      color:white;
+}
+.container-button input[type=submit]:hover {
+      background-color:gray;
+      color:white;
 }
 form button {
   margin-top: 30px;
   margin-bottom: 30px;
   margin-left: 10px;
 }
-
 *:after {
     padding: 0;
     margin: 0;
