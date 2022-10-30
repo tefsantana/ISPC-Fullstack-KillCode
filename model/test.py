@@ -1,5 +1,5 @@
-import Empleado
-empleado = Empleado.Empleado()
+import EmpleadoM
+empleado = EmpleadoM.Empleado()
 empleado.registrarEmpleado()
 """import mariadb.connector
 
