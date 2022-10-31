@@ -80,7 +80,12 @@
                 alert('Porfavor ingrese todos los valores en el formulario');
                 e.preventDefault();
             }
+            else {
+                alert('Felicitaciones, los valores del formulario se han enviado con éxito!!')
+            }
         };
+        
+
 
         var validar = function(e) {
             validarValoresDelFormulario(e);
