@@ -36,38 +36,30 @@
     </header>
     <div class="container">
         <h1>Configure su recibo del sueldo</h1>
-        <form class="was-validated">
+        <form  name="formulario" method="get">
             <h3>Ingrese sus detalles sobre la empresa</h3>
             <div class="row">
                 <div class="column">
                     <label for="nombreDeEmpresa">Nombre de empresa</label>
-                    <input type="text" class="form-control" id="nombreDeEmpresa" placeholder="Nombre de empresa" required>
-                    <div class="valid-feedback">Válido</div>
-                    <div class="invalid-feedback">Por favor llene este campo</div>
+                    <input type="text" name='nombreDeEmpresa' id="nombreDeEmpresa" placeholder="P. ej. BBVA">
                 </div>
                 <div class="column">
                     <label for="dirección">Dirección</label>
-                    <input type="text" class="form-control" id="dirección" placeholder="Dirección" required>
-                    <div class="valid-feedback">Válido</div>
-                    <div class="invalid-feedback">Por favor llene este campo</div>
+                    <input type="text"  id="dirección" placeholder="P. ej. General bustos 232">
                 </div>
             </div>
             <div class="row">
                 <div class="column">
                     <label for="cuidad">Cuidad</label>
-                    <input type="text"  class="form-control" id="cuidad" placeholder="Cuidad" required>
-                    <div class="valid-feedback">Válido</div>
-                    <div class="invalid-feedback">Por favor llene este campo</div>
+                    <input type="text"  id="cuidad" placeholder="P. ej. Córdoba">
                 </div>
                 <div class="column">
                     <label for="códigoPostal">Código postal</label>
-                    <input type="text" class="form-control" id="códigoPostal" placeholder="Código postal" required>
-                    <div class="valid-feedback">Válido</div>
-                    <div class="invalid-feedback">Por favor llene este campo</div>
+                    <input type="text" id="códigoPostal" placeholder="P. ej. B5000">
                 </div>
             </div>
             <div class="row">
-                <div class="column" class="form-control">
+                <div class="column">
                     <label for="país">País</label>
                     <select id="país">
                     <option value="Argentina">Argentina</option>
@@ -76,114 +68,86 @@
                     <option value="Brasil">Brasil</option>
                     <option value="Uruguay">Uruguay</option>
                     <option value="Chile">Chile</option>
-                </select required>
-                <div class="valid-feedback">Válido</div>
-                    <div class="invalid-feedback">Por favor llene este campo</div>
+                </select>
                 </div>
                 <div class="column">
                     <label for="provincia">Provincia</label>
-                    <input type="text" class="form-control" id="provincia" placeholder="Provincia" required>
-                    <div class="valid-feedback">Válido</div>
-                    <div class="invalid-feedback">Por favor llene este campo</div>
+                    <input type="text"  id="provincia" placeholder="P. ej. Chubut">
                 </div>
             </div>
             <h3>Ingrese sus detalles sobre sus empleados</h3>
             <div class="row">
                 <div class="column">
                     <label for="primerNombre">Primer nombre</label>
-                    <input type="text" class="form-control" id="primerNombre" placeholder="Primer nombre" required>
-                    <div class="valid-feedback">Válido</div>
-                    <div class="invalid-feedback">Por favor llene este campo</div>
+                    <input type="text"  id="primerNombre" placeholder="P. ej. Martín">
                 </div>
                 <div class="column">
                     <label for="apellido">Apellido</label>
-                    <input type="text" class="form-control" id="apellido" placeholder="Apellido" required>
-                    <div class="valid-feedback">Válido</div>
-                    <div class="invalid-feedback">Por favor llene este campo</div>
+                    <input type="text"  id="apellido" placeholder="P. ej. Díaz" >
                 </div>
             </div>
             <div class="row">
                 <div class="column">
-                    <label for="e-mail">E-mail</label>
-                    <input type="email" class="form-control" id="e-mail" placeholder="E-mail" required>
-                    <div class="valid-feedback">Válido</div>
-                    <div class="invalid-feedback">Por favor llene este campo</div>
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="P. ej.martin12@gmail.com">
                 </div>
                 <div class="column">
                     <label for="cuilDelEmpleado">Cuil del empleado</label>
-                    <input type="text" class="form-control" id="cuilDelEmpleado" placeholder="Cuil del empleado" required>
-                    <div class="valid-feedback">Válido</div>
-                    <div class="invalid-feedback">Por favor llene este campo</div>
+                    <input type="number" id="cuilDelEmpleado" placeholder="P. ej. 20-05854965-3">
                 </div>
             </div>
             <div class="row">
                 <div class="column">
-                    <label for="dirección">Dirección</label>
-                    <input type="text" class="form-control" id="e-mail" placeholder="Dirección" required>
-                    <div class="valid-feedback">Válido</div>
-                    <div class="invalid-feedback">Por favor llene este campo</div>
+                    <label for="dirección_two">Dirección</label>
+                    <input type="text" id="dirección_two" placeholder="P. ej. General bustos 232">
                 </div>
                 <div class="column">
-                    <label for="cuidad">Cuidad</label>
-                    <input type="text" class="form-control" id="cuidad" placeholder="Cuidad" required>
-                    <div class="valid-feedback">Válido</div>
-                    <div class="invalid-feedback">Por favor llene este campo</div>
+                    <label for="cuidad_two">Cuidad</label>
+                    <input type="text"  id="cuidad_two" placeholder="P. ej. Córdoba">
                 </div>
             </div>
             <div class="row">
                 <div class="column">
-                    <label for="códigoPostal">Código postal</label>
-                    <input type="text" class="form-control" id="códigoPostal" placeholder="Código postal" required>
-                    <div class="valid-feedback">Válido</div>
-                    <div class="invalid-feedback">Por favor llene este campo</div>
+                    <label for="códigoPostal_two">Código postal</label>
+                    <input type="text" id="códigoPostal_two" placeholder="P. ej. B5000">
                 </div>
-                <div class="column" >
-                    <label for="país">País</label>
-                    <select id="país" class="form-control">
+                <div class="column">
+                    <label for="país_two">País</label>
+                    <select id="país_two" >
                     <option value="Argentina">Argentina</option>
                     <option value="Alemania">Alemania</option>
                     <option value="España">España</option>
                     <option value="Brasil">Brasil</option>
                     <option value="Uruguay">Uruguay</option>
                     <option value="Chile">Chile</option>
-                </select required>
-                <div class="valid-feedback">Válido</div>
-                    <div class="invalid-feedback">Por favor llene este campo</div>
+                </select>
                 </div>
             </div>
             <div class="row">
                 <div class="column">
-                    <label for="provincia/cantón">Provincia/Cantón</label>
-                    <input type="text" class="form-control" id="provincia/cantón" placeholder="Provincia/Cantón" required>
-                    <div class="valid-feedback">Válido</div>
-                    <div class="invalid-feedback">Por favor llene este campo</div>
+                    <label for="provincia_two">Provincia/Cantón</label>
+                    <input type="text"  id="provincia_two" placeholder="P. ej. Chubut">
                 </div>
                 <div class="column">
                     <label for="dni">DNI</label>
-                    <input type="number" class="form-control" id="dni" placeholder="DNI" required>
-                    <div class="valid-feedback">Válido</div>
-                    <div class="invalid-feedback">Por favor llene este campo</div>
+                    <input type="number"  id="dni" placeholder="P. ej. 43235876">
                 </div>
             </div>
             <h3>Ingrese sus datos sobre los ingresos</h3>
             <div class="row">
                 <div class="column">
                     <label for="díaDelPago">Día del pago</label>
-                    <input type="date" class="form-control" min="1950-01-02" max="2022-12-31" placeholder="Día del Pago" id="díaDelPago" required>
-                    <div class="valid-feedback">Válido</div>
-                    <div class="invalid-feedback">Por favor llene este campo</div>
+                    <input type="date"  min="1950-01-02" max="2022-12-31" placeholder="P. ej.Día del Pago" id="díaDelPago">
                 </div>
                 <div class="column">
                     <label for="finDelPago">Fin del pago</label>
-                    <input type="date" class="form-control" min="1950-01-02" max="2022-12-31" placeholder="Fin del Pago" id="finDelPago" required>
-                    <div class="valid-feedback">Válido</div>
-                    <div class="invalid-feedback">Por favor llene este campo</div>
+                    <input type="date"  min="1950-01-02" max="2022-12-31" placeholder="P. ej. Fin del Pago" id="finDelPago">
                 </div>
             </div>
             <div class="row">
                 <div class="column">
                     <label for="cantidadDePagos">Cuántas veces es el pago?</label>
-                    <select id="cantidadDePagos" class="form-control" required>
+                    <select id="cantidadDePagos" name="cantidadDePagos">
             <option value="En todas 2 Semanas">En todas 2 Semanas</option>
             <option value="Semanalmente">Semanalmente</option>
             <option value="Por medio Mes">Por medio Mes</option>
@@ -192,36 +156,29 @@
             <option value="Por medio Año">Por medio Año</option>
             <option value="Por año">Por año</option>
         </select>
-        <div class="valid-feedback">Válido</div>
-                    <div class="invalid-feedback">Por favor llene este campo</div>
                 </div>
                 <div class="column">
                     <label for="ingresoAnual">Ingreso anual</label>
-                    <input type="number" class="form-control" placeholder="Ingreso anual" id="ingresoAnual" required>
-                    <div class="valid-feedback">Válido</div>
-                    <div class="invalid-feedback">Por favor llene este campo</div>
+                    <input type="number"  placeholder="P. ej. 600000" id="ingresoAnual">
                 </div>
             </div>
-            <h3>Ingres información sobre sus Deducciones</h3>
+            <h3>Ingrese información sobre sus Retenciones</h3>
             <div class="row">
                 <div class="column">
-                    <label for="causaPorLaDeducción">Causa por la deducción</label>
-                    <input type="text" class="form-control" id="causaPorLaDeducción" placeholder="Causa por la deducción" required>
-                    <div class="valid-feedback">Válido</div>
-                    <div class="invalid-feedback">Por favor llene este campo</div>
+                    <label for="causaPorLaRetención">Causa por la retención</label>
+                    <input type="text"  id="causaPorLaRetención" placeholder="P. ej. Impuestos">
                 </div>
                 <div class="column">
-                    <label for="cantidadDeDeducción">Cantidad de deducciones</label>
-                    <input type="number" class="form-control" id="cantidadDeDeducción" placeholder="Cantidad de deducciones" required>
-                    <div class="valid-feedback">Válido</div>
-                    <div class="invalid-feedback">Por favor llene este campo</div>
+                    <label for="cantidadDeRetenciones">Cantidad de retenciones</label>
+                    <input type="number"  id="cantidadDeRetenciones" placeholder="P. ej. 5 Retenciones">
             </div>
         </div>
         <div class="container-button">
-            <input type="submit" value="Crear el recibo del sueldo" />
+            <input type="submit"  id="btn" value="Crear el recibo del sueldo" />
             <input type="reset" value="Restablecer el recibo del sueldo" />
         </div>
     </form>
+    <script src="../js/configurador-De-Recibo-Del-Sueldo/configuraciónDeReciboDelSueldo.js"></script>
     </div>
     <footer>
         <div class="footer">

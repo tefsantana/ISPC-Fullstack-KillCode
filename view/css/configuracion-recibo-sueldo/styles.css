@@ -10,8 +10,6 @@ section.container {
   margin-left:10px;
   margin-right:10px;
 }
-.container-button input{
-}
 .container-button input[type=reset] {
   margin-bottom:20px;
 }
