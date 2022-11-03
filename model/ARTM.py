@@ -1,4 +1,4 @@
- leonardo
+leonardo
 import ConectDB
 class ARTM:
     def __init__(self) -> None:
