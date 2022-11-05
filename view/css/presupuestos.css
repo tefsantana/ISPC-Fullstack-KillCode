@@ -4,7 +4,7 @@
 }
 
 body{
-    background: skyblue;
+    background: white;
     margin: 0;
 }
 
@@ -36,47 +36,174 @@ button:hover{
 
 .color-killcode{color:rgba(0,10,0,.6)}
 
-header{
-    background-color: #039BE5;
-}
+/*************** Custom Properties **************/
+:root {
+    --first-color: #002266;
+    --second-color: #001133;
+    --third-color: #003299;
+    --four-color: #0044CC;
+    --five-color: #0055FF;
+    --six-color: #BEBDBD;
+    --seven-color: #053263;
+    --background-color: #D3D2D2;
+    --text-color: #000;
+    --white-color: #fff;
+    --black-color: #000;
+    --font: Arial, Helvetica, sans-serif;
+    --max-width: 100%;
+    --header-height: 4rem;
+  }
 
+/* header{
+    background-color: #001133;
+}
 header .logo{
-    margin: 0;
-    padding: 20px 30px;
-    font-weight: bold;
-    color: rgba(0,0,10,.6);
-    font-size: 1.6em;
+    margin-left: -120px;
+  }
+header img{
+    margin-top: 18px;
+    width: 160px;
 }
-
 header .container{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 header nav{
     display: flex;
     flex-direction: column;
     text-align: center;
     padding-bottom: 25px;
 }
-
 header a{
     padding: 4px 12px;
     text-decoration: none;
     font-weight: bold;
-    color: rgba(0,0,10,.6);
+    color: #BEBDBD;
 }
-
 header a:hover{
     background-color: rgb(110, 81, 243);
 }
-
+ */
+ .menu-btn {
+    outline: thin solid var(--third-color);
+    border: 0;
+    cursor: pointer;
+    background-color: var(--five-color);
+  }
+  
+  .menu-btn svg {
+    fill: var(--first-color);
+  }
+  
+  .menu {
+    position: fixed;
+    height: calc(100% - 15.8%);
+    left: 0;
+    top: var(--header-height);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--seven-color);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .5s ease;
+  }
+  
+  .menu a {
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: var(--six-color);
+  }
+  
+  .menu.is-active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .menu a:hover {
+    color: var(--white-color);
+    background-color: var(--five-color);
+  }
+  
+  /**************** Menu Responsive ****************/
+  @media screen and (min-width:769px) {
+    .menu-btn {
+      display: none;
+    }
+  
+    .menu {
+      position: static;
+      width: auto;
+      flex-direction: row;
+      background-color: var(--second-color);
+      opacity: 1;
+      pointer-events: auto;
+    }
+  
+    .menu a {
+      padding: 0 1rem;
+    }
+  
+    .menu a:hover {
+      background-color: transparent;
+    }
+  
+    .menu a:last-child {
+      padding-right: 0;
+    }
+  }
+  
+  /************ Navbar ************/
+  .header {
+    position: inherit;
+    padding: 10px;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    height: calc(var(--header-height)-0.5rem);
+    background-color: var(--second-color);
+  }
+  
+  .header>.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo a {
+    color: var(--white-color);
+    font-weight: bold;
+    font-size: 2rem;
+    text-decoration: none;
+  }
+  
+  .icon {
+    width: 60%;
+  }
+  
+  .alarm {
+    width: 18px;
+    margin-bottom: 3px;
+  }
+  
+  /**************** Navbar Responsive ****************/
+  @media screen and (max-width: 1024px) {
+    .header {
+      position: sticky;
+      top: 0;
+      padding: .5rem;
+  
+    }
+  }
 
 
 #nuestrosPresupuestos{
     text-align: center;
-    padding-top: 100px;
+    padding-top: 40px;
 }
 
 #nuestrosPresupuestos h2{
@@ -124,7 +251,7 @@ header a:hover{
         rgba(0,0,0,.5),
         rgba(0,0,0,.5)
     )
-    ,url(/assets/pequeaempresa.png);
+    ,url(../assets/pequeaempresa.png);
 }
 
 #opcionesPresupuestos .opcion:nth-child(3){
@@ -133,7 +260,7 @@ header a:hover{
         rgba(0,0,0,.5),
         rgba(0,0,0,.5)
     )
-    ,url(/assets/medianaempresa.png);
+    ,url(../assets/medianaempresa.png);
 }
 
 #opcionesPresupuestos .opcion:nth-child(4){
@@ -142,25 +269,42 @@ header a:hover{
         rgba(0,0,0,.5),
         rgba(0,0,0,.5)
     )
-    ,url(/assets/grandesempresas.jpg);
+    ,url(../assets/grandesempresas.jpg);
 }
 
-footer{
-    background-color: rgb(230,230,230);
-}
-
-footer p{
-    margin: 0;
-    padding: 12px;
-    color: rgb(100,100,100);
-}
-
-footer .container{
+.footer {
+    width: 100%;
     height: 150px;
+    background-color: #001133;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
-}
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .footer-content {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-section {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-text {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+
 
 @media (min-width: 720px){
 
@@ -201,41 +345,49 @@ footer .container{
     background-color: rgba(50,50,50,.4);
 }
 
-.opcion:first-child{
+#opcionesPresupuestos .opcion:first-child{
     background-image: linear-gradient(
         0deg,
         rgba(0,0,0,.5),
         rgba(0,0,0,.5)
     )
-    ,url(img/microempresas.jpg);
+    ,url(../assets/microempresas.jpg);
 }
 
-.opcion:nth-child(2){
+#opcionesPresupuestos .opcion:nth-child(2){
     background-image: linear-gradient(
         0deg,
         rgba(0,0,0,.5),
         rgba(0,0,0,.5)
     )
-    ,url(img/pequeaempresa.png);
+    ,url(../assets/pequeaempresa.png);
 }
 
-.opcion:nth-child(3){
+#opcionesPresupuestos .opcion:nth-child(3){
     background-image: linear-gradient(
         0deg,
         rgba(0,0,0,.5),
         rgba(0,0,0,.5)
     )
-    ,url(img/medianaempresa.png);
+    ,url(../assets/medianaempresa.png);
 }
 
-.opcion:nth-child(4){
+#opcionesPresupuestos .opcion:nth-child(4){
     background-image: linear-gradient(
         0deg,
         rgba(0,0,0,.5),
         rgba(0,0,0,.5)
     )
-    ,url(img/grandesempresas.jpg);
+    ,url(../assets/grandesempresas.jpg);
+}
 }
 
-
-}
+  /**************** Navbar Responsive ****************/
+  @media screen and (max-width: 1024px) {
+    .header {
+      position: sticky;
+      top: 0;
+      padding: .5rem;
+  
+    }
+  }
