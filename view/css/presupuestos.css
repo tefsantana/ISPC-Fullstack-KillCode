@@ -53,6 +53,13 @@ button:hover{
     --max-width: 100%;
     --header-height: 4rem;
   }
+<<<<<<< HEAD
+=======
+
+/* header{
+    background-color: #001133;
+}
+>>>>>>> d9c6e553c775d84c298b175e3a2eb9732333c7ac
 
 /* header{
     background-color: #001133;
@@ -60,10 +67,19 @@ button:hover{
 header .logo{
     margin-left: -120px;
   }
+<<<<<<< HEAD
+=======
+
+>>>>>>> d9c6e553c775d84c298b175e3a2eb9732333c7ac
 header img{
     margin-top: 18px;
     width: 160px;
 }
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> d9c6e553c775d84c298b175e3a2eb9732333c7ac
 header .container{
     display: flex;
     flex-direction: column;
@@ -390,4 +406,8 @@ header a:hover{
       padding: .5rem;
   
     }
+<<<<<<< HEAD
   }
+=======
+  }
+>>>>>>> d9c6e553c775d84c298b175e3a2eb9732333c7ac
