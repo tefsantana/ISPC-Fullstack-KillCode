@@ -1,89 +1,95 @@
-import json
-
 class Empleado:
 
-    def __init__(self, id, password, work_role, dni, name, surname, age, personal_email, work_email, personal_phone, work_phone, home_address, work_address, postal_code, city, province, country, sex, cuil):
-        self.id = id
-        self.password = password
-        self.work_role = work_role
+    def __init__(self, id_emp, id_empre, id_os, id_art, dni, cuil, nombre, apellido, d_nombre, d_numero, depo_provic, email_per, email_wk, tel_per, tel_wk, categoria, fecha_ing, fecha_nac, pais, provincia, ciudad):
+        self.id_emp = id_emp
+        self.id_empre = id_empre
         self.dni = dni
-        self.name = name
-        self.surname = surname
-        self.age = age
-        self.personal_email = personal_email
-        self.work_email = work_email
-        self.personal_phone = personal_phone
-        self.work_phone = work_phone
-        self.home_address = home_address
-        self.work_address = work_address
-        self.postal_code = postal_code
-        self.city = city
-        self.province = province
-        self.country = country
-        self.sex = sex
+        self.nombre = nombre
+        self.apellido = apellido
+        self.fecha_nac = fecha_nac
+        self.email_per = email_per
+        self.email_wk = email_wk
+        self.id_os = id_os
+        self.id_art = id_art
+        self.d_nombre = d_nombre
+        self.d_numero = d_numero
+        self.depo_provic = depo_provic
+        self.categoria = categoria
+        self.provincia = provincia
+        self.fecha_ing = fecha_ing
+        self.ciudad = ciudad
         self.cuil = cuil
+        self.pais = pais
+        self.tel_per = tel_per
+        self.tel_wk = tel_wk
 
     def __str__(self):
-        return f"Empleado: {self.name + self.surname}.\nLegajo: {self.id}"
+        return f"Empleado: {self.nombre + self.apellido}.\nLegajo: {self.id_emp}"
 
     # Getters
 
-    def get_id(self):
-        return self.id
+    def get_id_emp(self):
+        return self.id_emp
     
-    def get_password(self):
-        return self.password
+    def get_id_empre(self):
+        return self.id_empre
     
-    def get_sex(self):
-        return self.sex
+    def get_id_os(self):
+        return self.id_os
 
-    def get_work_role(self):
-        return self.work_role
+    def get_categoria(self):
+        return self.categoria
     
     def get_dni(self):
         return self.dni
     
-    def get_name(self):
-        return self.name
+    def get_nombre(self):
+        return self.nombre
     
-    def get_surname(self):
-        return self.surname
+    def get_apellido(self):
+        return self.apellido
     
-    def get_age(self):
-        return self.age
+    def get_fecha_nac(self):
+        return self.fecha_nac
     
-    def get_personal_email(self):
-        return self.personal_email
+    def get_email_per(self):
+        return self.email_per
     
-    def get_work_email(self):
-        return self.work_email
+    def get_email_wk(self):
+        return self.email_wk
     
-    def get_personal_phone(self):
-        return self.personal_phone
+    def get_tel_per(self):
+        return self.tel_per
     
-    def get_work_phone(self):
-        return self.work_phone
+    def get_tel_wk(self):
+        return self.tel_wk
     
-    def get_home_address(self):
-        return self.home_address
+    def get_d_nombre(self):
+        return self.d_nombre
     
-    def get_work_address(self):
-        return self.work_address
+    def get_d_numero(self):
+        return self.d_numero
     
-    def get_postal_code(self):
-        return self.postal_code
+    def get_depo_provic(self):
+        return self.depo_provic
     
-    def get_city(self):
-        return self.city
+    def get_ciudad(self):
+        return self.ciudad
     
-    def get_province(self):
-        return self.province
+    def get_provincia(self):
+        return self.provincia
     
-    def get_country(self):
-        return self.country
+    def get_pais(self):
+        return self.pais
     
     def get_cuil(self):
         return self.cuil
+
+    def get_art(self):
+        return self.id_art
+    
+    def get_fecha_ing(self):
+        return self.fecha_ing
 
     @classmethod
     # Método por el cual se maneja el login de los empleados.
@@ -120,8 +126,8 @@ class Empleado:
             "province": "CABA",
             "country": "Argentina",
         }
-        datos_personales_json = json.dumps(datos_personales, indent=2)
-        return datos_personales_json
+        #datos_personales_json = json.dumps(datos_personales, indent=2)
+        #return datos_personales_json
     
     @classmethod
     def elegirObraSocial(self):

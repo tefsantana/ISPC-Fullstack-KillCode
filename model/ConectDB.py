@@ -13,7 +13,7 @@ class Conectar():
                 port = 3306,
                 user = 'root',
                 password = '123456',
-                db = 'reciboHaberes'
+                db = 'recibohaberes'
             #Chicos tienen que modificar los valores de arriba acorde a sus PCs... Ojo!
             )
             return self.__conexion
