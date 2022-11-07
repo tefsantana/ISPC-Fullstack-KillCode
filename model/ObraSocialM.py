@@ -1,3 +1,4 @@
+
 import ConectDB
 class OSM:
     def __init__(self) -> None:
@@ -18,4 +19,3 @@ class OSM:
     def actualizarObraSocial(self, obj):
         #recibe el objeto ObraSocial a actualizar
         cur = self.__conet.cursor()
-        cur.execute("UPDATE")
