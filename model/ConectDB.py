@@ -23,3 +23,4 @@ class Conectar():
 
     def getConet(self):
         return self.__generarConexion()
+

@@ -1,3 +1,4 @@
+
 import ConectDB
 class EmpresaM:
     def __init__(self) -> None:
@@ -18,4 +19,3 @@ class EmpresaM:
     def actualizarEmpresa(self, obj):
         #recibe el objeto empleado a actualizar
         cur = self.__conet.cursor()
-        cur.execute("UPDATE")
