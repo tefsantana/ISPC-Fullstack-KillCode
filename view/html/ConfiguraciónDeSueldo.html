@@ -41,21 +41,21 @@
             <div class="row">
                 <div class="column">
                     <label for="nombreDeEmpresa">Nombre de empresa</label>
-                    <input type="text"  id="nombreDeEmpresa" placeholder="P. ej. BBVA">
+                    <input type="text"  id="nombreDeEmpresa"  minlength="3" maxlength="20" placeholder="P. ej. BBVA">
                 </div>
                 <div class="column">
                     <label for="dirección">Dirección</label>
-                    <input type="text"  id="dirección" placeholder="P. ej. General bustos 232">
+                    <input type="text"  id="dirección" minlength="17" maxlength="25" placeholder="P. ej. General bustos 232">
                 </div>
             </div>
             <div class="row">
                 <div class="column">
                     <label for="cuidad">Cuidad</label>
-                    <input type="text"  id="cuidad" placeholder="P. ej. Córdoba">
+                    <input type="text" id="cuidad" minlength="3"  maxlength="15" placeholder="P. ej. Córdoba">
                 </div>
                 <div class="column">
                     <label for="códigoPostal">Código postal</label>
-                    <input type="text" id="códigoPostal" placeholder="P. ej. B5000">
+                    <input type="text" id="códigoPostal" minlength="5" maxlength="5" placeholder="P. ej. B5000">
                 </div>
             </div>
             <div class="row">
@@ -72,18 +72,18 @@
                 </div>
                 <div class="column">
                     <label for="provincia">Provincia</label>
-                    <input type="text"  id="provincia" placeholder="P. ej. Chubut">
+                    <input type="text"  id="provincia" minlength="3" maxlength="12" placeholder="P. ej. Chubut">
                 </div>
             </div>
             <h3>Ingrese sus detalles sobre sus empleados</h3>
             <div class="row">
                 <div class="column">
                     <label for="primerNombre">Primer nombre</label>
-                    <input type="text"  id="primerNombre" placeholder="P. ej. Martín">
+                    <input type="text"  id="primerNombre" minlenght="3" maxlength="10" placeholder="P. ej. Martín">
                 </div>
                 <div class="column">
                     <label for="apellido">Apellido</label>
-                    <input type="text"  id="apellido" placeholder="P. ej. Díaz" >
+                    <input type="text"  id="apellido" minlenght="3" maxlength="15" placeholder="P. ej. Díaz" >
                 </div>
             </div>
             <div class="row">
@@ -93,23 +93,23 @@
                 </div>
                 <div class="column">
                     <label for="cuilDelEmpleado">Cuil del empleado</label>
-                    <input type="number" id="cuilDelEmpleado" placeholder="P. ej. 20-05854965-3">
+                    <input type="number" id="cuilDelEmpleado" min="1000000000000" max="9999999999999" placeholder="P. ej. 20-05854965-3">
                 </div>
             </div>
             <div class="row">
                 <div class="column">
                     <label for="dirección_two">Dirección</label>
-                    <input type="text" id="dirección_two" placeholder="P. ej. General bustos 232">
+                    <input type="text" id="dirección_two" minlength="17" maxlength="25" placeholder="P. ej. General bustos 232">
                 </div>
                 <div class="column">
                     <label for="cuidad_two">Cuidad</label>
-                    <input type="text"  id="cuidad_two" placeholder="P. ej. Córdoba">
+                    <input type="text"  id="cuidad_two" minlength="3"  maxlength="15" placeholder="P. ej. Córdoba">
                 </div>
             </div>
             <div class="row">
                 <div class="column">
                     <label for="códigoPostal_two">Código postal</label>
-                    <input type="text" id="códigoPostal_two" placeholder="P. ej. B5000">
+                    <input type="text" id="códigoPostal_two" minlength="5" maxlength="5" placeholder="P. ej. B5000">
                 </div>
                 <div class="column">
                     <label for="país_two">País</label>
@@ -126,11 +126,11 @@
             <div class="row">
                 <div class="column">
                     <label for="provincia_two">Provincia/Cantón</label>
-                    <input type="text"  id="provincia_two" placeholder="P. ej. Chubut">
+                    <input type="text"  id="provincia_two" minlength="3" maxlength="12" placeholder="P. ej. Chubut">
                 </div>
                 <div class="column">
                     <label for="dni">DNI</label>
-                    <input type="number"  id="dni" placeholder="P. ej. 43235876">
+                    <input type="number"  id="dni" min="10000000" max="99999999" placeholder="P. ej. 43235876">
                 </div>
             </div>
             <h3>Ingrese sus datos sobre los ingresos</h3>
@@ -159,18 +159,18 @@
                 </div>
                 <div class="column">
                     <label for="ingresoAnual">Ingreso anual</label>
-                    <input type="number"  placeholder="P. ej. 600000" id="ingresoAnual">
+                    <input type="number" min="100" max="1000000"  placeholder="P. ej. 600000" id="ingresoAnual">
                 </div>
             </div>
             <h3>Ingrese información sobre sus Retenciones</h3>
             <div class="row">
                 <div class="column">
                     <label for="causaPorLaRetención">Causa por la retención</label>
-                    <input type="text"  id="causaPorLaRetención" placeholder="P. ej. Impuestos">
+                    <input type="text" maxlength="35" id="causaPorLaRetención" placeholder="P. ej. Impuestos">
                 </div>
                 <div class="column">
                     <label for="cantidadDeRetenciones">Cantidad de retenciones</label>
-                    <input type="number"  id="cantidadDeRetenciones" placeholder="P. ej. 5 Retenciones">
+                    <input type="number"  id="cantidadDeRetenciones" min="100" max="1000000" placeholder="P. ej. 5 Retenciones">
             </div>
         </div>
         <div class="container-button">
