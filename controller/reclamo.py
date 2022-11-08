@@ -108,4 +108,4 @@ reclamos = [
     Reclamo(2, "2021-05-02", "El servicio no llegó a tiempo.", "Pendiente"),
     Reclamo(3, "2021-05-03", "El servicio no llegó a tiempo.", "Pendiente")
 ]
-print(reclamos)
+print(reclamos[2])
