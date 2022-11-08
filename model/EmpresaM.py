@@ -19,3 +19,4 @@ class EmpresaM:
     def actualizarEmpresa(self, obj):
         #recibe el objeto empleado a actualizar
         cur = self.__conet.cursor()
+        

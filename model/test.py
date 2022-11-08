@@ -6,3 +6,5 @@ emp = Empleado(654321, 1, 1, 1, 7777777, 2077777775, "prueba", "grande", "fernet
 emp.__str__()
 #empt = EmpleadoM.EmpleadoM()
 #empt.eliminarEmpleado(22222222)
+
+
