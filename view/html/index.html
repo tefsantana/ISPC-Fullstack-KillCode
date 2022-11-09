@@ -2,13 +2,18 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Inicio</title>
-    <link rel="stylesheet" href="../css/index.css">
+  <meta charset="UTF-8">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="../css/index.css">
+  <title>Inicio</title>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
+  <!-- Header hecho por mi -->
+  <!-- <header>
         <div class="container">
             <div class="logo">
                 <a href="index.html"><img class="icon" src="../assets/killcode-icon.png" alt="killIcon"></a>
@@ -16,58 +21,78 @@
             <nav>
                 <a href="#">Inicio</a>
                 <a href="perfil.html">Perfil</a>
-                <a href="#">Soluciones</a>
-                <a href="presupuestos.html">Presupuestos</a>
-                <a href="ayuda.html">Ayuda</a>
+                <a href="presupuestos.html">Soluciones</a>
+                <a href="help.html">Ayuda</a>
                 <a href="#">Contacto</a>
                 <a href="#">Sobre KillCode</a>
             </nav>
         </div>
-    </header>
-    <section id="hero">
-        <h1>Soluciones Empresariales</h1>
-        <button>¡CONTÁCTENOS!</button>
+    </header> -->
+  <!-- Header hecho por mi -->
+  <header id="navbar" class="header">
+    <section class="container">
+      <div class="logo">
+        <a href="home.html"><img class="icon" src="../assets/killcode-icon.png" alt="killcode icon"></a>
+      </div>
+      <button class="menu-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M4 6H20V8H4zM4 11H20V13H4zM4 16H20V18H4z" />
+        </svg>
+        <svg class="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path
+            d="M16.192 6.344L11.949 10.586 7.707 6.344 6.293 7.758 10.535 12 6.293 16.242 7.707 17.656 11.949 13.414 16.192 17.656 17.606 16.242 13.364 12 17.606 7.758z" />
+        </svg>
+      </button>
+      <nav class="menu">
+        <a href="index.html">Inicio</a>
+        <a href="#welcome-section">Acerca</a>
+        <a href="presupuestos.html">Servicios</a>
+        <a href="#projects">Trabajos</a>
+        <a href="#contact">Contacto</a>
+        <a href="#notificacions" style="padding-right: 16px;">Notificaciones <img class="alarm"
+            src="../assets/alarm.png"></a>
+      </nav>
     </section>
+  </header>
 
-    <section id="somos-KillCode">
-        <div class="container">
+  <section id="hero">
+    <h1>Soluciones Empresariales</h1>
+    <button>¡CONTÁCTENOS!</button>
+  </section>
 
-            <div class="img-container"></div>
+  <section id="somos-KillCode">
+    <div class="container">
 
-            <div class="texto">
-                <h2>Somos <span class="color-killcode">KillCode</span></h2>
-                <p> La presentación lo es todo. Somos KillCode, un grupo de 8 estudiantes de
-                    programación en busca de un mejor futuro. Nos enfocamos día a día en entregar el mejor
-                    servicio a nuestros clientes.
-                    Nosotros contemplamos todas las exigencias necesarias para brindarle lo mejor a su empresa.
-                </p>
-            </div>
-        </div>
-    </section>
+      <div class="img-container"></div>
 
-    <section id="caracteristicas">
-        <div class="container">
-            <ul>
-                <li>✔️​ ​Soluciones para cada necesidad</li>
-                <li>✔️ ​​100% intuitivo</li>
-                <li>✔️ ​Guías para los usuarios</li>
-                <li>✔️​ Asistencia las 24hs, los 365 días del año​</li>
-            </ul>
-        </div>
-    </section>
+      <div class="texto">
+        <h2>Somos <span class="color-killcode">KillCode</span></h2>
+        <p> La presentación lo es todo. Somos KillCode, un grupo de 8 estudiantes de
+          programación en busca de un mejor futuro. Nos enfocamos día a día en entregar el mejor
+          servicio a nuestros clientes.
+          Nosotros contemplamos todas las exigencias necesarias para brindarle lo mejor a su empresa.
+        </p>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-        <div class="footer">
-            <div class="footer-content">
-                <!-- <div class="logo">
-                    <img class="icon" src="./assets/killcode-icon.png" alt="killcode icon">
-                </div> -->
-                <div class="footer-section">
-                    <p class="footer-text">@ 2022 KillCode</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+  <section id="caracteristicas">
+    <div class="container">
+      <ul>
+        <li>✔️​ ​Soluciones para cada necesidad</li>
+        <li>✔️ ​​100% intuitivo</li>
+        <li>✔️ ​Guías para los usuarios</li>
+        <li>✔️​ Asistencia las 24hs, los 365 días del año​</li>
+      </ul>
+    </div>
+  </section>
+
+  <div id="footer"></div>
+
+
+
+
+  <script src="../js/header-footer/header-footer.js"></script>
 
 </body>
 

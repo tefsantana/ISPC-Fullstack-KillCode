@@ -2,87 +2,107 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Presupuestos</title>
-    <link rel="stylesheet" href="../css/presupuestos.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Presupuestos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="../css/presupuestos.css">
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 </head>
 
 <body>
-
-    <header>
+  <!-- Header hecho por mi -->
+  <!-- <header>
         <div class="container">
             <div class="logo">
                 <a href="index.html"><img class="icon" src="../assets/killcode-icon.png" alt="killIcon"></a>
             </div>
             <nav>
-                <a href="index.html">Inicio</a>
+                <a href="#">Inicio</a>
                 <a href="perfil.html">Perfil</a>
-                <a href="#">Soluciones</a>
-                <a href="presupuestos.html">Presupuestos</a>
-                <a href="#">Ayuda</a>
+                <a href="presupuestos.html">Soluciones</a>
+                <a href="help.html">Ayuda</a>
                 <a href="#">Contacto</a>
                 <a href="#">Sobre KillCode</a>
             </nav>
         </div>
-    </header>
-
-    <section id="nuestrosPresupuestos">
-        <h2>
-            <h2>Nuestras ofertas</h2>
-        </h2>
-        <div class="container">
-
-            <div class="img-container"></div>
-            <p>Conozca nuestras ofertas para su empresa.
-                Independientemente del tamaño de su empresa, tenemos una
-                opción para satisfacer sus necesidades.
-            </p>
-        </div>
+    </header> -->
+  <!-- Header hecho por mi -->
+  <header id="navbar" class="header">
+    <section class="container">
+      <div class="logo">
+        <a href="home.html"><img class="icon" src="../assets/killcode-icon.png" alt="killcode icon"></a>
+      </div>
+      <button class="menu-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M4 6H20V8H4zM4 11H20V13H4zM4 16H20V18H4z" />
+        </svg>
+        <svg class="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path
+            d="M16.192 6.344L11.949 10.586 7.707 6.344 6.293 7.758 10.535 12 6.293 16.242 7.707 17.656 11.949 13.414 16.192 17.656 17.606 16.242 13.364 12 17.606 7.758z" />
+        </svg>
+      </button>
+      <nav class="menu">
+        <a href="index.html">Inicio</a>
+        <a href="#welcome-section">Acerca</a>
+        <a href="presupuestos.html">Servicios</a>
+        <a href="#projects">Trabajos</a>
+        <a href="#contact">Contacto</a>
+        <a href="#notificacions" style="padding-right: 16px;">Notificaciones <img class="alarm"
+            src="../assets/alarm.png"></a>
+      </nav>
     </section>
+  </header>
 
-    <section id="opcionesPresupuestos">
-        <div class="container">
-            <div class="opcion">
-                <h3>Micro Empresas</h3>
-                <p>Paquete pensado para empresas con no más de 10 empleados. En esta opción encontrara lo indispensable
-                    para su negocio.</p>
-                <button>+ Info</button>
-            </div>
-            <div class="opcion">
-                <h3>Pequeñas Empresas</h3>
-                <p>Paquete pensado para empresa con no más de 50 empleados. Su negocio esta en constante crecimiento,
-                    tenemos lo que necesita.</p>
-                <button>+ Info</button>
-            </div>
-            <div class="opcion">
-                <h3>Medianas Empresas</h3>
-                <p>Paquete pensado para empresas de no más de 250 empleados. Necesita agilizar una parte administrativa,
-                    nosotros tenemos la solución</p>
-                <button>+ Info</button>
-            </div>
-            <div class="opcion">
-                <h3>Grandes Empresas</h3>
-                <p>Paquete pensado para empresas con más de 250 empleados. Ya consolidados, nosotros podemos facilitar
-                    aun más las cosas.
-                    <button>+ Info</button>
-            </div>
-        </div>
-    </section>
+  <section id="nuestrosPresupuestos">
+    <h2>
+      <h2>Nuestras ofertas</h2>
+    </h2>
+    <div class="container">
 
-    <footer>
-        <div class="footer">
-            <div class="footer-content">
-                <!-- <div class="logo">
-                    <img class="icon" src="./assets/killcode-icon.png" alt="killcode icon">
-                </div> -->
-                <div class="footer-section">
-                    <p class="footer-text">@ 2022 KillCode</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+      <div class="img-container"></div>
+      <p>Conozca nuestras ofertas para su empresa.
+        Independientemente del tamaño de su empresa, tenemos una
+        opción para satisfacer sus necesidades.
+      </p>
+    </div>
+  </section>
+
+  <section id="opcionesPresupuestos">
+    <div class="container">
+      <div class="opcion">
+        <h3>Micro Empresas</h3>
+        <p>Paquete pensado para empresas con no más de 10 empleados. En esta opción encontrara lo indispensable
+          para su negocio.</p>
+        <button>+ Info</button>
+      </div>
+      <div class="opcion">
+        <h3>Pequeñas Empresas</h3>
+        <p>Paquete pensado para empresa con no más de 50 empleados. Su negocio esta en constante crecimiento,
+          tenemos lo que necesita.</p>
+        <button>+ Info</button>
+      </div>
+      <div class="opcion">
+        <h3>Medianas Empresas</h3>
+        <p>Paquete pensado para empresas de no más de 250 empleados. Necesita agilizar una parte administrativa,
+          nosotros tenemos la solución</p>
+        <button>+ Info</button>
+      </div>
+      <div class="opcion">
+        <h3>Grandes Empresas</h3>
+        <p>Paquete pensado para empresas con más de 250 empleados. Ya consolidados, nosotros podemos facilitar
+          aun más las cosas.
+          <button>+ Info</button>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer"></div>
+
+  <script src="../js/header-footer/header-footer.js"></script>
 
 </body>
 
