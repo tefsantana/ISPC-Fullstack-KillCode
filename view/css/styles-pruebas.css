@@ -228,6 +228,12 @@ body {
 
 /************ Footer ************/
 
+.footer-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
 .footer {
   width: 100%;
   height: 150px;
@@ -258,4 +264,8 @@ body {
   color: var(--white-color);
   font-size: 1.2rem;
   font-weight: 400;
+}
+
+.svg-white {
+  filter: invert(100%);
 }
