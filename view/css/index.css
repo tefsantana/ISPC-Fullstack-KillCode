@@ -40,7 +40,10 @@ button:hover{
 /* header{
     background-color: #001133;
 }
+<<<<<<< HEAD
+=======
 
+>>>>>>> d9c6e553c775d84c298b175e3a2eb9732333c7ac
 header .logo{
     margin-left: -120px;
     
@@ -50,28 +53,40 @@ header .logo{
     margin-top: 18px;
     width: 160px;
 }
+<<<<<<< HEAD
+=======
 
 
+>>>>>>> d9c6e553c775d84c298b175e3a2eb9732333c7ac
 header .container{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+<<<<<<< HEAD
+=======
 
+>>>>>>> d9c6e553c775d84c298b175e3a2eb9732333c7ac
 header nav{
     display: flex;
     flex-direction: column;
     text-align: center;
     padding-bottom: 25px;
 }
+<<<<<<< HEAD
+=======
 
+>>>>>>> d9c6e553c775d84c298b175e3a2eb9732333c7ac
 header a{
     padding: 4px 12px;
     text-decoration: none;
     font-weight: bold;
     color: #BEBDBD;
 }
+<<<<<<< HEAD
+=======
 
+>>>>>>> d9c6e553c775d84c298b175e3a2eb9732333c7ac
 header a:hover{
     background-color: rgb(110, 81, 243);
 } */
@@ -212,17 +227,26 @@ header a:hover{
   }
 
 /*@media (min-width: 720px){
+<<<<<<< HEAD
+=======
 
+>>>>>>> d9c6e553c775d84c298b175e3a2eb9732333c7ac
     /* header{
         position: fixed;
         width: 100%;
     }
+<<<<<<< HEAD
+=======
 
+>>>>>>> d9c6e553c775d84c298b175e3a2eb9732333c7ac
     header .container{
         flex-direction: row;
         justify-content: space-between;
     }
+<<<<<<< HEAD
+=======
 
+>>>>>>> d9c6e553c775d84c298b175e3a2eb9732333c7ac
     header nav{
         flex-direction: row;
         padding-bottom: 0;
@@ -336,4 +360,8 @@ header a:hover{
     #caracteristicas ul{
         text-align: center;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> d9c6e553c775d84c298b175e3a2eb9732333c7ac
