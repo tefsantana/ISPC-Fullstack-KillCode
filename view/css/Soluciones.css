@@ -200,20 +200,26 @@ h4.h4 {
 }
 
 
-h1  {
+h2  {
     flex: auto;
    font-size: 35px ;
    margin-left: 25px;
 }
 
-.caja{
-    /* width: 50px;
-    position: relative;
-    margin: 0 auto; */
+/* .containerdos{
     display: flex;
-    justify-content: space-between;
-    height: 15px;
+    flex-direction: row;
+    height: 250px;
+    flex-wrap: wrap;
+} */
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+
 
 /************ Footer ************/
 
