@@ -63,13 +63,13 @@ body {
 
 .menu {
   position: fixed;
-  height: calc(100% - 15.8%);
+  /* height: calc(100% - 15.8%); */
   left: 0;
   top: var(--header-height);
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: var(--seven-color);
+  background-color: var(--second-color);
   opacity: 0;
   pointer-events: none;
   transition: opacity .5s ease;
