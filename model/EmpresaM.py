@@ -1,4 +1,3 @@
-
 import ConectDB
 class EmpresaM:
     def __init__(self) -> None:
