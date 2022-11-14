@@ -36,6 +36,36 @@
         </section>
     </header>
 
+    <div class="modal fade" id="role-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Junior Frontend Developer</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div style="margin-bottom: 10px;">Un <b>desarrollador frontend</b> trabaja la interfaz de usuario desde el punto de vista del código, para que la interacción con el sistema sea posible. Por lo tanto, se encarga de la parte visual de la web (de todo aquello que puedes ver en tu explorador) haciendo que su diseño sea intuitivo y atractivo.</div>
+
+                <div style="margin-bottom: 10px;">Las funciones del rol son las siguientes:
+                    <ul>
+                        <li>Traducir diseños a lenguaje de programación,
+                        <li>Desarrollar la parte visual y estructura de un site o app web, además de mantener y optimizar sitios y apps web e interfaces de usuario,</li>
+                        <li>Facilitar la navegación del usuario y mejorar la usabilidad e interacción con el sitio en cualquier dispositivo o explorador (revisar tiempo de carga de la web, hacer diseños responsivos, escribir código mantenible, asegurar la accesibilidad de la web, etc),</li>
+                        <li>Ocuparse de los componentes externos del site o app web y gestionar el flujo de trabajo del software,</li>
+                        <li>Implementar prácticas de SEO on page,</li>
+                        <li>Ser <b>cross-browser</b> (que se vea correctamente en diferentes navegadores), </li>
+                        <li>Ser <b>cross-platform</b> (en diferentes sistemas operativos),</li>
+                        <li>Ser <b>cross-device</b> (en diferentes dispositivos).</li>
+                    </ul> 
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
     <section class="main-section">
         <div class="title">
             <h1 class="h1">Perfil</h1>
@@ -142,6 +172,14 @@
         </div>
         <button id="new-email-btn" class="btn btn-primary btn-sm" data-bs-toggle="collapse" data-bs-target="#new-email-form" aria-expanded="false" aria-controls="collapseExample" type="submit">Nuevo email</button>
         <div id="new-email-form" class="new-email-form collapse">
+            <div class="email-type">
+                <label for="email-type" class="email-type">Seleccione el tipo de email: </label>
+                <select id="email" class="form-select-sm options">
+                    <option value="none-email" selected disabled>-</option>
+                    <option value="personal">Personal</option>
+                    <option value="laboral">Laboral</option>
+                </select>
+            </div>
             <label for="email" class="email">Ingrese su correo electrónico: </label>
             <div class="input-group mb-3">
                 <input id="email-username" type="text" class="form-control" placeholder="Usuario" aria-label="Username">
@@ -194,12 +232,20 @@
         </div>
 
         <button id="new-address-btn" class="btn btn-primary btn-sm" data-bs-toggle="collapse" data-bs-target="#new-address-form" aria-expanded="false" aria-controls="collapseExample" type="submit">Nuevo domicilio</button>
-        <div id="new-address-form" class="new-address-form collapse" >
-            <label for="address" style="margin-right: 10px">Ingrese la calle de su domicilio: </label>
+        <div id="new-address-form" class="new-address-form collapse">
+            <div class="address-type">
+                <label for="address-type" class="address-type">Seleccione el tipo de domicilio: </label>
+                <select id="address" class="form-select-sm options">
+                    <option value="none-address" selected disabled>-</option>
+                    <option value="personal">Casa</option>
+                    <option value="laboral">Trabajo</option>
+                </select>
+            </div>
+            <label for="address" style="margin-right: 10px; margin-bottom: 10px; margin-top: 10px;">Ingrese la calle de su domicilio: </label>
             <input id="address-text" class="form-control" type="text" placeholder="Ej: Alcaraz">
-            <label for="address" style="margin-right: 10px">Ingrese la altura de su domicilio: </label>
+            <label for="address" style="margin-right: 10px; margin-bottom: 10px;">Ingrese la altura de su domicilio: </label>
             <input id="address-number" class="form-control" type="text" placeholder="Ej: 1029">
-            <button id="confirm-new-address-btn" class="btn btn-primary btn-sm confirm-btn" type="submit">Confirmar</button>
+            <button id="confirm-new-address-btn" class="btn btn-primary btn-sm confirm-btn" style="margin-top: 10px;" type="submit">Confirmar</button>
         </div>
 
         <h4 class="h4">Rol del puesto</h4>
@@ -208,8 +254,8 @@
             <div class="card-body">
                 <h5 class="card-title">Junior Frontend Developer</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Cross Sistemas</h6>
-                <p class="card-text">Un desarrollador front-end trabaja la interfaz de usuario desde el punto de vista del código, para que la interacción con el sistema sea posible. Por lo tanto, se encarga de la parte visual de la web (de todo aquello que puedes ver en tu explorador) haciendo que su diseño sea intuitivo y atractivo.</p>
-                <a href="#" class="card-link">Conocer más</a>
+                <p class="card-text">Un desarrollador frontend trabaja la interfaz de usuario desde el punto de vista del código, para que la interacción con el sistema sea posible. Por lo tanto, se encarga de la parte visual de la web (de todo aquello que puedes ver en tu explorador) haciendo que su diseño sea intuitivo y atractivo.</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#role-modal">Conocer más</button>
             </div>
         </div>
         <h5>Responsables del sector</h5>

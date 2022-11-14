@@ -1,7 +1,13 @@
 // Variables hardcodeadas y constantes necesarias.
 
-let password = "HolaMundo";
-let email = "testusuario1@gmail.com";
+let users = [
+    {
+        email: "testusuario1@gmail.com",
+        password: "HolaMundo1",
+        securityQuestion: "coco"
+    }
+]
+
 const enterSiteButton = document.getElementById("enter-site");
 
 // Funciones de redirección.
@@ -14,7 +20,7 @@ function goToSuccessfulRegister() {
     window.location.href = "success-register.html";
 }
 
-function goToChangePassword() {
+function goToChangePassword(userEmail) {
     window.location.href = "change-password.html";
 }
 
@@ -24,28 +30,85 @@ function goToSuccessfulChangePassword() {
 
 // Funciones para verificar los inputs de los form.
 
-function verifyLogin(email, password){
+function newUserRegistry() {
 
-    // Get the value 'Email' from the form and test it.
-    let emailInput = document.getElementById("inputEmail").value;
-    let alertMessageEmail = document.getElementById("alert-msg-email");
-    let successEmail = false;
-    if (!(/^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i.test(emailInput))) {
-        alertMessageEmail.innerHTML = "El correo electrónico ingresado no es válido.";
+    debugger;
+    // Variables.
+    let dni = document.getElementById("dni").value;
+    let names = document.getElementById("names").value;
+    let emailInput = document.getElementById("inputEmail3").value;
+    let passwordInput = document.getElementById("inputPass2").value;
+    let answer1 = document.getElementById("first-security-question2").value;
+
+    // Alertas de mensaje por errores en los campos (validación)
+    let alertMessageDni = document.getElementById("alert-msg-dni");
+    let alertMessageNames = document.getElementById("alert-msg-names");
+    let alertMessageEmail = document.getElementById("alert-msg-email3");
+    let alertMessagePassword = document.getElementById("alert-msg-password2");
+
+    // Validación de campos bien insertados.
+    let exists = false;
+    let successfulEmail = false;
+    let successfulDNI = false;
+    let successfulPass = false;
+    let successfulNames = false;
+
+    //Estructura de objeto del nuevo usuario en registro.
+    let userObject = {
+        email: emailInput,
+        password: passwordInput,
+        securityQuestion: answer1
+    }
+
+    users.find(function(user) {
+        return (user.email == emailInput) ? exists = true : exists = false;
+    });
+
+    // Validación del email (si existe también es rechazado)
+    if (exists) {
+        alertMessageEmail.innerHTML = "El correo electrónico ingresado ya existe.";
         alertMessageEmail.classList.remove("disabled");
         alertMessageEmail.ariaDisabled = false;
     }
     else {
-        alertMessageEmail.classList.add("disabled");
-        alertMessageEmail.ariaDisabled = true;
-        successEmail = true;
+        if (!(/^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i.test(emailInput))) {
+            alertMessageEmail.innerHTML = "El correo electrónico ingresado no es válido.";
+            alertMessageEmail.classList.remove("disabled");
+            alertMessageEmail.ariaDisabled = false;
+        }
+        else {
+            alertMessageEmail.classList.add("disabled");
+            alertMessageEmail.ariaDisabled = true;
+            successfulEmail = true;
+        }
     }
 
-    // Get the value 'Password' from the form and test it.
-    let passwordInput = document.getElementById("inputPass").value;
-    let alertMessagePassword = document.getElementById("alert-msg-password");
-    let successPass = false;
-    if (!(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])$/.test(passwordInput))) {
+    // Validación del DNI ingresado.
+    if (/^[0-9]{1,3}\.?[0-9]{3,3}\.?[0-9]{3,3}$/.test(dni)) {
+        alertMessageDni.classList.add("disabled");
+        alertMessageDni.ariaDisabled = true;
+        successfulDNI = true;
+    }
+    else {
+        alertMessageDni.innerHTML = "El DNI ingresado no es válido.";
+        alertMessageDni.classList.remove("disabled");
+        alertMessageDni.ariaDisabled = false;
+    }
+
+    // Validación de los nombres ingresados.
+    if (names == "" || names == null) {
+        alertMessageNames.innerHTML = "Debe ingresar su nombre y apellido. No se permiten números.";
+        alertMessageNames.classList.remove("disabled");
+        alertMessageNames.ariaDisabled = false;
+    }
+    else {
+        alertMessageNames.classList.add("disabled");
+        alertMessageNames.ariaDisabled = true;
+        successfulNames = true;
+    }
+
+    // Validación de la contraseña
+    if (!(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/.test(passwordInput))) {
         alertMessagePassword.innerHTML = "La contraseña ingresada no es válida.";
         alertMessagePassword.classList.remove("disabled");
         alertMessagePassword.ariaDisabled = false;
@@ -53,38 +116,64 @@ function verifyLogin(email, password){
     else {
         alertMessagePassword.classList.add("disabled");
         alertMessagePassword.ariaDisabled = true;
-        successPass = true;
+        successfulPass = true;
     }
 
-    // If the email and password are correct, the button is enabled.
-    if (successEmail && successPass) {
-        enterSiteButton.classList.remove("disabled");
-        enterSiteButton.ariaDisabled = false;
+    if (successfulEmail && successfulDNI && successfulPass && successfulNames) {
+        users.push(userObject);
+        localStorage.setItem('users', users);
+        goToSuccessfulRegister();
     }
-    
-    let valid = false;
-    if (newPassword) { // REVISAR
-        if ((emailInput == email && passwordInput == password)) { 
-            valid = true;
-        }
-    }
-    return valid;
 }
 
-function verifySecurityQuestions() {
-    let answer1 = document.getElementById("first-security-question").value;
-    let answer2 = document.getElementById("second-security-question").value;
-    let alertMessage = document.getElementById("alert-msg-security");
-    let valid = false;
-    if (answer1.toLowerCase() === "coco" && answer2.toLowerCase() === "azul") {
-        valid = true;
+function verifyLogin(){
+
+    // Inicializo variables.
+    let emailInput = document.getElementById("inputEmail1").value;
+    let passwordInput = document.getElementById("inputPass").value;
+    let alertMessage = document.getElementById("alert-msg");
+    let validEmail = false;
+    let validPass = false;
+
+    for (let i = 0; i < users.length; i++) {
+        if (users[i].email == emailInput) {
+            validEmail = true;
+        }
+        if (users[i].password == passwordInput) {
+            validPass = true;
+        }
     }
-    else {
+
+    // Si el email y contraseña ingresados no coinciden con los existentes, muestra mancheta roja de error.
+    if ((validEmail == false || validPass == false) || (emailInput == "" || passwordInput == "")) {
         alertMessage.innerHTML = "Los datos ingresados son incorrectos.";
         alertMessage.classList.remove("disabled");
         alertMessage.ariaDisabled = false;
     }
-    return valid;
+
+    if (validEmail == true && validPass == true) {
+        window.location.href = "index.html";
+    }
+}
+
+function verifySecurityQuestions() {
+    let answer1 = document.getElementById("first-security-question").value;
+    let emailInput = document.getElementById("inputEmail2").value;
+    let alertMessage = document.getElementById("alert-msg-security");
+    let userObject = {
+        email: emailInput,
+        valid: false
+    }
+
+    users.find(function(user) {
+        return (user.email == emailInput && user.securityQuestion == answer1) ? userObject.valid = true : userObject.valid = false;
+    });
+    if (!userObject.valid) {
+        alertMessage.innerHTML = "Los datos ingresados son incorrectos.";
+        alertMessage.classList.remove("disabled");
+        alertMessage.ariaDisabled = false;
+    }
+    return userObject;
 }
 
 function verifyNewPassword() {
@@ -94,21 +183,17 @@ function verifyNewPassword() {
     let alertMessage = document.getElementById("alert-msg");
     let testPass = (/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/.test(password));
     let testRepeatedPass = (/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/.test(repeat_password));
-    let trueResult = {
-        bool: true,
-        pass: password
-    }
 
-    if (!(testRepeatedPass && testPass)) {
-        alertMessage.innerHTML = "La contraseña ingresada no es válida. Debe contener al menos 8 caracteres, una mayúscula, una minúscula y un número.";
+    if ((!(testRepeatedPass && testPass)) && (password == repeat_password)) {
+        alertMessage.innerHTML = "La contraseña ingresada no es válida.";
         alertMessage.classList.remove("disabled");
         alertMessage.ariaDisabled = false;
         return false;
     }
     else if (password == repeat_password && testRepeatedPass && testPass) {
-        return trueResult;
+        return true;
     }
-    else if (password != repeat_password && testRepeatedPass && testPass ) {
+    else if (password != repeat_password) {
         alertMessage.innerHTML = "Las contraseñas no coinciden.";
         alertMessage.classList.remove("disabled");
         alertMessage.ariaDisabled = false;
@@ -120,22 +205,20 @@ function verifyNewPassword() {
 
 document.addEventListener("click", (e) => {
     if (!e.target.matches("#validate-security-questions")) return false;
-    else if (verifySecurityQuestions()) {
+    else if (verifySecurityQuestions().valid) {
+        let userEmail = verifySecurityQuestions().email;
         goToChangePassword();
     }
 });
 
 document.addEventListener("click", (e) => {
     if (!e.target.matches("#confirm-change-password-btn")) return false;
-    if (verifyNewPassword().bool) {
-        const newPassword = verifyNewPassword().pass;
+    if (verifyNewPassword()) {
         goToSuccessfulChangePassword();
     }
 });
 
 document.addEventListener("click", (e) => {
     if (!e.target.matches("#enter-site")) return false;
-    if (verifyLogin(email, password)) {
-        window.location.href = "index.html";
-    }
+    verifyLogin();
 });

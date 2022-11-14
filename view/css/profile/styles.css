@@ -264,6 +264,11 @@ button.btn.confirm-btn {
   display: grid;
 }
 
+.email-type {
+  display: flex;
+  margin: 10px 10px 10px 0;
+}
+
 .email {
   margin: 10px 10px 10px 0;
 }
@@ -274,6 +279,11 @@ button.btn.confirm-btn {
   margin-bottom: 10px;
   font-size: 13px;
   display: grid;
+}
+
+.address-type {
+  display: flex;
+  margin: 10px 10px 10px 0;
 }
 
 /**************** Forms ****************/

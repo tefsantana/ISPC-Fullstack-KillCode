@@ -1,5 +1,3 @@
-/*********************Menu*********************/
-
 ((d) => {
   const $btnMenu = d.querySelector(".menu-btn"),
     $menu = d.querySelector(".menu");
@@ -128,6 +126,64 @@ if (clickNewEmailBtn) {
   });
 }
 
+// Domicilio
 
-// Email
+// Nuevo teléfono
+
+let address = {
+  type: '',
+  street: '',
+  number: '',
+};
+
+document.addEventListener("click", (e) => {
+  if (!e.target.matches("#new-address-btn")) return false;
+  if (document.getElementById("new-address-btn").innerHTML === "Nuevo domicilio") document.getElementById("new-address-btn").innerHTML = "Cancelar";
+  else if (document.getElementById("new-address-btn").innerHTML === "Cancelar") document.getElementById("new-address-btn").innerHTML = "Nuevo domicilio";
+  let select = document.querySelector('select');
+  let addressText = document.getElementById('address-text');
+  let addressNumber= document.getElementById('address-number');
+  let confirmNewAddress = document.querySelector('#confirm-new-address-btn');
+  if (select.value === 'none-address') {
+    confirmNewAddress.classList.add("disabled");
+    confirmNewAddress.ariaDisabled = true;
+  }
+
+  let validateChecks = {
+    selectCheck: false,
+    inputCheck: false
+  }
+
+  select.addEventListener('change', function() {
+    let selected = select.value;
+    if (selected !== "none-address") {
+      validateChecks.selectCheck = true;
+    }
+    else {
+      validateChecks.selectCheck = false;
+    }
+  });
+
+  input.addEventListener('input', function() {
+    let inputText = input.value;
+    if (inputText !== "" && inputText.length === 8) {
+      validateChecks.inputCheck = true;
+    }
+    else {
+      validateChecks.inputCheck = false;
+    }
+  });
+
+  if (validateChecks.selectCheck && validateChecks.inputCheck) {
+    confirmNewAddress.classList.remove("disabled");
+    confirmNewAddress.ariaDisabled = false;
+  }
+
+  confirmNewAddress.addEventListener("click", function() {
+    address.type = select.value;
+    address.number = addressNumber;
+    address.street = addressText;
+  });
+
+});
 

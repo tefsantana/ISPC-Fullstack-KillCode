@@ -25,24 +25,33 @@
                     <div class="mb-4">
                         <label for="dni" class="form-label text">DNI</label>
                         <input type="text" class="form-control" id="dni" placeholder="Ingrese su DNI.">
+                        <div class="alert alert-danger disabled" id="alert-msg-dni" role="alert" style="margin-top:10px"></div>
                     </div>
                     <div class="mb-4">
                         <label for="names" class="form-label text">Nombres y apellidos</label>
                         <input type="text" class="form-control" id="names" placeholder="Ingrese su nombre completo.">
+                        <div class="alert alert-danger disabled" id="alert-msg-names" role="alert" style="margin-top:10px"></div>
                     </div>
                     <div class="mb-4">
                         <label for="email" class="form-label text">Correo electrónico</label>
-                        <input type="email" class="form-control" id="email" placeholder="Ingrese su correo electrónico">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="Ingrese su correo electrónico">
+                        <div class="alert alert-danger disabled" id="alert-msg-email3" role="alert" style="margin-top:10px"></div>
                     </div>
                     <div class="mb-4">
                         <label for="password" class="form-label text">Nueva contraseña</label>
-                        <input type="password" class="form-control" id="password" placeholder="Ingrese su contraseña">
+                        <p style="font-size: 14px">La misma debe contener al menos <i><u>8 caracteres</u></i>, <i><u>una mayúscula</u></i> y <i><u>un número</u></i>.</p>
+                        <input type="password" class="form-control" id="inputPass2" placeholder="Ingrese su contraseña">
+                        <div class="alert alert-danger disabled" id="alert-msg-password2" role="alert" style="margin-top:10px"></div>
+                    </div>
+                    <div class="mb-4">
+                        <label for="text" class="form-label text">Pregunta de seguridad</label>
+                        <input type="text" class="form-control" id="first-security-question2" placeholder="¿Cuál fue su primera mascota?">
+                        <div class="alert alert-danger disabled" id="alert-msg-security2" role="alert" style="margin-top:10px"></div>
                     </div>
                     <div class="form-text">Nunca vamos a compartir tus datos personales.</div>
                     <div class="buttons">
-                        <button id="confirm-register-btn" type="button" class="btn btn-danger center" onclick="goToSuccessfulRegister()">Confirmar</button>
+                        <button id="confirm-register-btn" type="button" class="btn btn-danger center" onclick="newUserRegistry()">Confirmar</button>
                     </div>
-                    <div id="success-register" class="none form-text">El registro fue exitoso</div>
                 </div>
             </form>
         </section>
