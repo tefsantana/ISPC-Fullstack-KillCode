@@ -1,65 +1,65 @@
 <!DOCTYPE html>
 <html lang="es-ES">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/login/styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <title>KillCode</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/login/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <title>Registro</title>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <div id="page">
-        <header id="background">
-            <div class="container-sm">
-                <img src="../assets/killcode-icon.png" class="logo" alt="killcode logo">
-                <div class="title">
-                    <h1 class="h1">Plataforma de Recibos de Sueldo</h1>
-                </div>
-            </div>
-        </header>
-        <section class="content">
-            <form>
-                <div class="text-size">
-                    <h1 class="subtitle">Registro</h1>
-                    <div class="mb-4">
-                        <label for="dni" class="form-label text">DNI</label>
-                        <input type="text" class="form-control" id="dni" placeholder="Ingrese su DNI.">
-                        <div class="alert alert-danger disabled" id="alert-msg-dni" role="alert" style="margin-top:10px"></div>
-                    </div>
-                    <div class="mb-4">
-                        <label for="names" class="form-label text">Nombres y apellidos</label>
-                        <input type="text" class="form-control" id="names" placeholder="Ingrese su nombre completo.">
-                        <div class="alert alert-danger disabled" id="alert-msg-names" role="alert" style="margin-top:10px"></div>
-                    </div>
-                    <div class="mb-4">
-                        <label for="email" class="form-label text">Correo electrónico</label>
-                        <input type="email" class="form-control" id="inputEmail3" placeholder="Ingrese su correo electrónico">
-                        <div class="alert alert-danger disabled" id="alert-msg-email3" role="alert" style="margin-top:10px"></div>
-                    </div>
-                    <div class="mb-4">
-                        <label for="password" class="form-label text">Nueva contraseña</label>
-                        <p style="font-size: 14px">La misma debe contener al menos <i><u>8 caracteres</u></i>, <i><u>una mayúscula</u></i> y <i><u>un número</u></i>.</p>
-                        <input type="password" class="form-control" id="inputPass2" placeholder="Ingrese su contraseña">
-                        <div class="alert alert-danger disabled" id="alert-msg-password2" role="alert" style="margin-top:10px"></div>
-                    </div>
-                    <div class="mb-4">
-                        <label for="text" class="form-label text">Pregunta de seguridad</label>
-                        <input type="text" class="form-control" id="first-security-question2" placeholder="¿Cuál fue su primera mascota?">
-                        <div class="alert alert-danger disabled" id="alert-msg-security2" role="alert" style="margin-top:10px"></div>
-                    </div>
-                    <div class="form-text">Nunca vamos a compartir tus datos personales.</div>
-                    <div class="buttons">
-                        <button id="confirm-register-btn" type="button" class="btn btn-danger center" onclick="newUserRegistry()">Confirmar</button>
-                    </div>
-                </div>
-            </form>
-        </section>
-        <footer>
-            <p class="footer-text">@ 2022 KillCode</p>
-        </footer>
-    </div>
-    <script src="../js/login/controller.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <div id="page">
+    <header id="background">
+      <div class="container-sm">
+        <img src="../assets/killcode-icon.png" class="logo" alt="killcode logo">
+        <div class="title">
+          <h1 class="h1">Plataforma de Recibos de Sueldo</h1>
+        </div>
+      </div>
+    </header>
+    <section class="content">
+      <form>
+        <div class="text-size">
+          <h1 class="subtitle">Registro</h1>
+          <div class="mb-4">
+            <label for="dni" class="form-label text">DNI</label>
+            <input type="text" class="form-control" id="dni" placeholder="Ingrese su DNI.">
+          </div>
+          <div class="mb-4">
+            <label for="names" class="form-label text">Nombres y apellidos</label>
+            <input type="text" class="form-control" id="names" placeholder="Ingrese su nombre completo.">
+          </div>
+          <div class="mb-4">
+            <label for="email" class="form-label text">Correo electrónico</label>
+            <input type="email" class="form-control" id="email" placeholder="Ingrese su correo electrónico">
+          </div>
+          <div class="mb-4">
+            <label for="password" class="form-label text">Nueva contraseña</label>
+            <input type="password" class="form-control" id="password" placeholder="Ingrese su contraseña">
+          </div>
+          <div class="form-text">Nunca vamos a compartir tus datos personales.</div>
+          <div class="buttons">
+            <button id="confirm-register-btn" type="button" class="btn btn-danger center"
+              onclick="goToSuccessfulRegister()">Confirmar</button>
+          </div>
+          <div id="success-register" class="none form-text">El registro fue exitoso</div>
+        </div>
+      </form>
+    </section>
+    <div id="footer"></div>
+  </div>
+
+  <script src="../js/login/controller.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <script src="../js/header-footer/header-footer.js"></script>
 </body>
+
 </html>
