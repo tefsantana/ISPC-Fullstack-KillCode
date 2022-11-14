@@ -18,4 +18,3 @@ class ARTM:
     def actualizarART(self, obj):
         #recibe el objeto ART a actualizar
         cur = self.__conet.cursor()
-

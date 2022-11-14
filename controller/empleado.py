@@ -30,7 +30,7 @@ class Empleado:
 
     def get_id_emp(self):
         return self.id_emp
-    
+     
     def get_id_empre(self):
         return self.id_empre
     
