@@ -1,8 +1,13 @@
-html,
-body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
+html, body {
+    margin:0;
+    padding:0;
+    height:100%;
+    scroll-behavior: smooth;
+}
+  
+#page {
+    position: relative;
+    min-height: 100%;
 }
 
 #page {
@@ -89,10 +94,17 @@ h1,
   font-size: 15px;
 }
 
-.contact-rrhh {
-  white-space: pre-wrap;
-  width: 330px;
-  font-size: 15px;
+.security-questions {
+    width: 330px;
+    font-size: 15px;
+    box-shadow: 1px 1px 5px black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.security-questions > input {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .no-padding {
@@ -122,14 +134,32 @@ footer {
   padding-bottom: 30px;
 }
 
-@media (max-width: 500px) {
-  .content {
-    width: 300px;
-    margin: auto;
-  }
-
-  .logo {
-    width: 50%;
-    height: 50%;
-  }
+@media (max-width: 360px){
+    .text-size {
+        padding-left: 5px;
+    }
 }
+
+@media (min-width: 361px) and (max-width: 500px){
+    .content {
+        width: 300px;
+        margin: auto;
+    }
+
+    .logo {
+        width: 50%;
+        height: 50%;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 700px){
+    .form-control {
+        font-size: 0.8rem;
+    }
+
+    .text-size {
+        padding-left: 20px;
+    }
+
+}
+
