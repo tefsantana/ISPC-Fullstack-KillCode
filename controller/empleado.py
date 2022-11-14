@@ -131,4 +131,4 @@ class Empleado:
     
     @classmethod
     def elegirObraSocial(self):
-        print('Se eligió obra social')
+        print("Se eligio obra social")
