@@ -21,7 +21,7 @@ position: relative;
 .slider{
 display: flex;
 width: 400%;
-height: 550px;
+height: 450px;
 margin-left: -100%;
 }
 .slider__section{
@@ -48,7 +48,7 @@ border-radius: 50%;
 cursor: pointer;
 }
 .slider__btn:hover{
-background: #fff;
+background: rgb(224, 224, 224);
 }
 .slider__btn--left{
 left: 10px;
